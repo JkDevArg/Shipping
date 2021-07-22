@@ -1,3 +1,4 @@
+<?php //do not include this line
 add_filter( 'woocommerce_available_payment_gateways', 'o354_payment_gateway_disable_country' );
 function o354_payment_gateway_disable_country( $available_gateways ) {
     if ( is_admin() ) return $available_gateways;
